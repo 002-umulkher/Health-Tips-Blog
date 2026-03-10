@@ -42,7 +42,7 @@
                     <span class="category">Nutrition</span>
                     <h3>Hydration in High Heat</h3>
                     <p>Best practices for staying hydrated during the dry season...</p>
-                    <a href="#" class="read-btn">Read More</a>
+                    <a href="#" onclick="window.location.href='post.html?id=${post.id}'" class="read-btn">Read More</a>
                 </div>
             </article>
         </section>
@@ -69,6 +69,31 @@
     // Pick a random tip
     const randomTip = tips[Math.floor(Math.random() * tips.length)];
     document.getElementById('tip-text').innerText = randomTip;
+
+
+fetch('posts.json')
+        .then(response => response.json()) // 2. Turn the file into a list the computer understands
+        .then(data => {
+            const container = document.getElementById('blog-container');
+            
+            // 3. Loop through each post in your JSON list
+            data.forEach(post => {
+                const card = `
+                    <article class="card">
+                        <div class="card-image" style="background-color: ${post.imageColor};"></div>
+                        <div class="card-content">
+                            <span class="category">${post.category}</span>
+                            <h3>${post.title}</h3>
+                            <p>${post.summary}</p>
+                            <a href="post.html?id=${post.id}" class="read-btn">Read More</a>
+                        </div>
+                    </article>
+                `;
+                container.innerHTML += card; // 4. Add the card to the screen
+            });
+        });
+
+
 </script>
 </body>
 </html>

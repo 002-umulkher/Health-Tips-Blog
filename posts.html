@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tip Details | HealthHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Health<span>Hub</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="post-template">
+        <article class="full-post">
+            <span id="post-category" class="category"></span>
+            <h1 id="post-title">Loading Article...</h1>
+            <div id="post-content" class="post-body">
+                </div>
+            <div class="post-footer">
+                <a href="index.html" class="back-link">&larr; Back to Health Tips</a>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        // Assistant: Get the ID from the URL (e.g., post.html?id=1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const postId = urlParams.get('id');
+
+        // Assistant: Find the data in the JSON "Menu"
+        fetch('posts.json')
+            .then(response => response.json())
+            .then(data => {
+                const post = data.find(p => p.id == postId);
+
+                if (post) {
+                    document.getElementById('post-title').innerText = post.title;
+                    document.getElementById('post-category').innerText = post.category;
+                    document.getElementById('post-content').innerText = post.content;
+                    document.title = post.title + " | HealthHub";
+                } else {
+                    document.getElementById('post-title').innerText = "Post Not Found";
+                }
+            })
+            .catch(err => console.error("Error loading post:", err));
+    </script>
+
+</body>
+</html>
