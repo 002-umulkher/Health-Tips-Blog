@@ -52,5 +52,23 @@
         <p>&copy; 2026 Isiolo Health Hub. Built by [Your Name]</p>
     </footer>
 
+    <section id="daily-tip" style="background: #e3f2fd; padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center;">
+    <h3>💡 Tip of the Day</h3>
+    <p id="tip-text">Loading your health tip...</p>
+</section>
+
+<script>
+    const tips = [
+        "Drink at least 8 glasses of water today—especially in this Isiolo heat!",
+        "Chewing sugar-free gum can help prevent cavities after meals.",
+        "Always finish your full dose of antibiotics, even if you feel better.",
+        "Walking for 30 minutes a day significantly lowers your blood pressure.",
+        "Rinse your mouth with water after drinking sugary sodas."
+    ];
+
+    // Pick a random tip
+    const randomTip = tips[Math.floor(Math.random() * tips.length)];
+    document.getElementById('tip-text').innerText = randomTip;
+</script>
 </body>
 </html>
