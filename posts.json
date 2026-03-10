@@ -1,0 +1,24 @@
+{
+    "id": 1,
+    "title": "Generic vs. Brand Name Meds",
+    "category": "Pharmacy",
+    "summary": "Why paying more for a 'brand' isn't always necessary for your health.",
+    "content": "Most generic medicines have the same active ingredients as expensive brands...",
+    "imageColor": "#e3f2fd"
+  },
+  {
+    "id": 2,
+    "title": "The Dangers of Sugary Sodas",
+    "category": "Dental",
+    "summary": "How hidden acids in soft drinks erode your tooth enamel over time.",
+    "content": "Every time you sip a soda, your teeth are under attack for 20 minutes...",
+    "imageColor": "#fff3e0"
+  },
+  {
+    "id": 3,
+    "title": "First Aid for Heat Stroke",
+    "category": "Wellness",
+    "summary": "Essential steps to take during the hottest months in Isiolo.",
+    "content": "If someone feels dizzy and stopped sweating, move them to the shade immediately...",
+    "imageColor": "#f1f8e9"
+  }
