@@ -97,7 +97,43 @@ footer {
     color: #888;
 }
 
+/* --- Search Bar Styles --- */
+.search-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
 
+#searchInput {
+    width: 100%;
+    padding: 15px 25px 15px 45px;
+    font-size: 1rem;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+#searchInput:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.2rem;
+}
+
+/* Animation for filtering cards */
+.card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
 
 /* Specific Styles for the Single Post Page */
