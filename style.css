@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.logo span { color: #3498db; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: #555; font-size: 0.9rem; }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(44, 62, 80, 0.8)), url('hero-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+/* Blog Grid */
+main { padding: 40px 5%; }
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card-image { height: 180px; width: 100%; }
+
+.card-content { padding: 20px; }
+
+.category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.card-content h3 { margin: 10px 0; color: #2c3e50; }
+
+.read-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: #888;
+}
