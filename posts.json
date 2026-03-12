@@ -1,6 +1,4 @@
-
-[ 
-
+[
   {
     "id": 2,
     "title": "The Dangers of Sugary Sodas",
@@ -14,8 +12,7 @@
     "title": "First Aid for Heat Stroke",
     "category": "Wellness",
     "summary": "Essential steps to take during the hottest months in Isiolo.",
-    "content": "If someone feels dizzy and stopped sweating, move them to the shade immediately...",
+    "content": "If someone feels dizzy and has stopped sweating, move them to the shade immediately...",
     "imageColor": "#f1f8e9"
   }
 ]
-
