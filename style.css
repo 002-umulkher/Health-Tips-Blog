@@ -42,11 +42,25 @@ nav ul li a { text-decoration: none; color: #555; font-size: 0.9rem; }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(44, 62, 80, 0.8)), url('hero-bg.jpg');
-    background-size: cover;
+    background:
+        /* subtle medical cross pattern overlay */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.18' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M36 18v36'/%3E%3Cpath d='M18 36h36'/%3E%3C/g%3E%3C/svg%3E"),
+        /* clean clinical gradient */
+        linear-gradient(135deg, rgba(233, 246, 255, 0.95), rgba(203, 231, 250, 0.90)),
+        /* fallback if you later add an image */
+        url('hero-bg.jpg');
+    background-size: 72px 72px, cover, cover;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-position: center, center, center;
     color: white;
     padding: 60px 5%;
     text-align: center;
+}
+
+.hero h1,
+.hero p {
+    /* ensure text stays readable on lighter background */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 /* Blog Grid */
@@ -179,8 +193,101 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive adjustment for small screens */
+/* Responsive adjustments */
+
+/* Tablets and small laptops */
+@media (max-width: 900px) {
+    header {
+        padding: 0.75rem 4%;
+    }
+
+    .hero {
+        padding: 40px 4%;
+    }
+
+    main {
+        padding: 30px 4%;
+    }
+}
+
+/* Mobile phones */
 @media (max-width: 600px) {
-    #post-title { font-size: 1.8rem; }
-    .full-post { padding: 20px; }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 30px 6%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 25px 4%;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-image {
+        height: 160px;
+    }
+
+    .search-wrapper {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    #searchInput {
+        font-size: 0.95rem;
+        padding: 12px 22px 12px 40px;
+    }
+
+    .search-icon {
+        left: 25px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 25px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Single post layout tweaks */
+    .post-template {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    #post-title {
+        font-size: 1.8rem;
+    }
+
+    .full-post {
+        padding: 20px;
+    }
 }
