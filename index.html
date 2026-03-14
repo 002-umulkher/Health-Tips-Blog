@@ -76,65 +76,6 @@
     <p id="tip-text">Loading your health tip...</p>
 </section>
 
-<script>
-const searchInput = document.getElementById('searchInput');
-
-searchInput.addEventListener('keyup', (e) => {
-    const term = e.target.value.toLowerCase();
-    const cards = document.querySelectorAll('.card');
-
-    cards.forEach(card => {
-        // We look inside the card for the Title and Category
-        const title = card.querySelector('h3').innerText.toLowerCase();
-        const category = card.querySelector('.category').innerText.toLowerCase();
-        
-        // If the search term is found in either, show it. Otherwise, hide it.
-        if (title.includes(term) || category.includes(term)) {
-            card.style.display = 'block';
-            card.style.opacity = '1';
-        } else {
-            card.style.display = 'none';
-            card.style.opacity = '0';
-        }
-    });
-});
-
-    const tips = [
-        "Drink at least 8 glasses of water today—especially in this Isiolo heat!",
-        "Chewing sugar-free gum can help prevent cavities after meals.",
-        "Always finish your full dose of antibiotics, even if you feel better.",
-        "Walking for 30 minutes a day significantly lowers your blood pressure.",
-        "Rinse your mouth with water after drinking sugary sodas."
-    ];
-
-    // Pick a random tip
-    const randomTip = tips[Math.floor(Math.random() * tips.length)];
-    document.getElementById('tip-text').innerText = randomTip;
-
-
-fetch('posts.json')
-        .then(response => response.json()) // 2. Turn the file into a list the computer understands
-        .then(data => {
-            const container = document.getElementById('blog-container');
-            
-            // 3. Loop through each post in your JSON list
-            data.forEach(post => {
-                const card = `
-                    <article class="card">
-                        <div class="card-image" style="background-color: ${post.imageColor};"></div>
-                        <div class="card-content">
-                            <span class="category">${post.category}</span>
-                            <h3>${post.title}</h3>
-                            <p>${post.summary}</p>
-                            <a href="post.html?id=${post.id}" class="read-btn">Read More</a>
-                        </div>
-                    </article>
-                `;
-                container.innerHTML += card; // 4. Add the card to the screen
-            });
-        });
-
-
-</script>
+<script src="main.js"></script>
 </body>
 </html>
