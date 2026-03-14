@@ -12,6 +12,40 @@ body {
     line-height: 1.6;
 }
 
+/*welcome*/
+
+.welcome-section {
+    background: linear-gradient(135deg, #f0f9ff 0%, #cbebff 100%); /* Light medical blue */
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0eef5;
+}
+
+.welcome-container h1 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.welcome-container p {
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+.badge {
+    background: #0056b3;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+
 /* Navigation */
 header {
     background: #fff;
@@ -39,6 +73,9 @@ nav {
 nav ul { display: flex; list-style: none; }
 nav ul li { margin-left: 20px; }
 nav ul li a { text-decoration: none; color: #555; font-size: 0.9rem; }
+
+
+
 
 /* Hero Section */
 .hero {
