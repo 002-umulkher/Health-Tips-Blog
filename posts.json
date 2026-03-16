@@ -4,6 +4,7 @@
     "id": 1,
     "title": "Generic vs. Brand Name Meds",
     "category": "Pharmacy",
+    "icon":"💊",
     "summary": "Understanding the difference can save you money at the chemist.",
     "content": "Generic drugs have the same active ingredients as brand-name drugs but usually cost much less...",
     "imageColor": "#c6e3f8"
@@ -22,6 +23,7 @@
     "id": 3,
     "title": "First Aid for Heat Stroke",
     "category": "Wellness",
+    "icon":"☀️",
     "summary": "Essential steps to take during the hottest months in Isiolo.",
     "content": "If someone feels dizzy and has stopped sweating, move them to the shade immediately...",
     "imageColor": "#f1f8e9"
