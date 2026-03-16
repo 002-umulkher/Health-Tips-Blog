@@ -130,10 +130,14 @@ main { padding: 40px 5%; }
       justify-content: center;
       font-size: 4rem; 
       border-bottom: 1px solid #eee;
-    
-    
+      transition: all 0.3s ease;
     }
 
+    .card:hover .card-image {
+        font-size: 5rem;
+        filter: brightness(1.05);
+    }
+    
 .card-content { padding: 20px; }
 
 .category {
