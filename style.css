@@ -91,18 +91,18 @@ nav ul li a { text-decoration: none; color: #555; font-size: 0.9rem; }
 main { padding: 40px 5%; }
 
 
-/* No Results Message */
+
 #no-results-message {
     text-align: center;
     color: #7f8c8d;
     padding: 20px;
-    font-size: 1.1rem;
-    background: #fff;
-    border-radius: 8px;
+    font-size: 1.2rem;
+    background: #a4d6fe;
+    border-radius: 9px;
     margin: 20px auto;
     max-width: 500px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    border: 1px dashed #cbd5e0; 
+    border: 1px dashed #f98383;
 }
 
 
