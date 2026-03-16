@@ -43,7 +43,7 @@ fetch('posts.json')
     data.forEach((post) => {
       const card = `
         <article class="card">
-          <div class="card-image" style="background: linear-gradient(135deg, ${post.imageColor}0%, #ffffff 100%);">
+          <div class="card-image" style="background-color: ${post.imageColor};">
           ${post.icon || '🏥'}
           </div>
           <div class="card-content">
