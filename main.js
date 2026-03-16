@@ -43,7 +43,9 @@ fetch('posts.json')
     data.forEach((post) => {
       const card = `
         <article class="card">
-          <div class="card-image" style="background-color: ${post.imageColor};"></div>
+          <div class="card-image" style="background-color: ${post.imageColor};">
+          ${post.icon || '🏥'}
+          </div>
           <div class="card-content">
             <span class="category">${post.category}</span>
             <h3>${post.title}</h3>
