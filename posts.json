@@ -1,10 +1,20 @@
 [
+
+  {
+    "id": 1,
+    "title": "Generic vs. Brand Name Meds",
+    "category": "Pharmacy",
+    "summary": "Understanding the difference can save you money at the chemist.",
+    "content": "Generic drugs have the same active ingredients as brand-name drugs but usually cost much less...",
+    "imageColor": "#c6e3f8"
+  },
+
   {
     "id": 2,
     "title": "The Dangers of Sugary Sodas",
     "category": "Dental",
     "summary": "How hidden acids in soft drinks erode your tooth enamel over time.",
-    "content": "Every time you sip a soda, your teeth are under attack for 20 minutes.Therefore,the No.1 thing to do is two rinse your mouth with water after drinking soda!",
+    "content": "Every time you sip a soda, your teeth are under attack for 20 minutes.Therefore,the No.1 thing to do is to rinse your mouth with water after drinking soda!",
     "imageColor": "#fff3e0"
   },
   {
@@ -14,9 +24,16 @@
     "summary": "Essential steps to take during the hottest months in Isiolo.",
     "content": "If someone feels dizzy and has stopped sweating, move them to the shade immediately...",
     "imageColor": "#f1f8e9"
+  },
+
+  {
+    "id": 4,
+    "title": "The Science of Archery Focus",
+    "category": "Wellness",
+    "summary": "How practicing archery can improve mental clarity and posture.",
+    "content": "Archery is not just about the bow; it is about breathing and core stability. It requires a calm mind and steady hand, which reduces stress...",
+    "imageColor": "#fffde7"
   }
-
-
 
 
 

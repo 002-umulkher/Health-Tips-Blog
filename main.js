@@ -59,3 +59,30 @@ fetch('posts.json')
     console.error('Error loading posts:', err);
   });
 
+  if (searchInput) {
+    const noResultsMsg = document.createElement('p');
+  noResultsMsg.id = 'no-results';
+  noResultsMsg.style.display = 'none';
+  noResultsMsg.style.textAlign = 'center';
+  noResultsMsg.innerText = "No matching health tips found. Try another search!";
+  container.parentNode.insertBefore(noResultsMsg, container.nextSibling);
+
+  searchInput.addEventListener('keyup', (e) => {
+    const term = e.target.value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let foundAny = false;
+
+    cards.forEach((card) => {
+      const title = card.querySelector('h3').innerText.toLowerCase();
+      const category = card.querySelector('.category').innerText.toLowerCase();
+
+      if (title.includes(term) || category.includes(term)) {
+        card.style.display = 'block';
+        foundAny = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    noResultsMsg.style.display = (!foundAny && term !== "") ? 'block' : 'none';
+  });
+}
