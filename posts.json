@@ -31,12 +31,35 @@
 
   {
     "id": 4,
-    "title": "The Science of Archery Focus",
+    "title": "Understanding Expiry Dates",
+    "category": "Pharmacy",
+    "icon": "📅",
+    "summary": "Is it safe to take medicine a day after it expires? Learn what those dates actually mean for your safety.",
+    "imageColor": "#d6eaf8"
+  },
+  {
+    "id": 5,
+    "title": "Brushing vs. Flossing",
+    "category": "Dental",
+    "icon": "🪥",
+    "summary": "Brushing only cleans 60% of your teeth. Find out why flossing is the secret to avoiding painful cavities.",
+    "imageColor": "#fef9e7"
+  },
+  {
+    "id": 6,
+    "title": "Natural Ways to Boost Immunity",
     "category": "Wellness",
-    "icon":"A",
-    "summary": "How practicing archery can improve mental clarity and posture.",
-    "content": "Archery is not just about the bow; it is about breathing and core stability. It requires a calm mind and steady hand, which reduces stress...",
-    "imageColor": "#fffde7"
+    "icon": "🍋",
+    "summary": "From ginger to enough sleep, explore simple habits that keep you from getting sick during flu season.",
+    "imageColor": "#d5f5e3"
+  },
+  {
+    "id": 7,
+    "title": "Painkillers: What to Know",
+    "category": "Pharmacy",
+    "icon": "🩹",
+    "summary": "Paracetamol or Ibuprofen? Understand the difference so you choose the right relief for your aches.",
+    "imageColor": "#e8daef"
   }
 
 
