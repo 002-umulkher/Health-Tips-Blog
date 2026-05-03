@@ -6,7 +6,7 @@
     "category": "Pharmacy",
     "icon":"💊",
     "summary": "Understanding the difference can save you money at the chemist.",
-    "content": "Generic drugs have the same active ingredients as brand-name drugs but usually cost much less...",
+    "content": "Many people ask if 'cheaper' medicine is less effective. The truth is that generic drugs have the exact same active ingredients, strength, and safety as brand-name drugs. They cost less only because the manufacturers didn't have to pay for the original research or expensive TV commercials. When you buy a generic version at the pharmacy, you are getting the same medical benefit for a much better price. Always ask your pharmacist if a generic version is available for your prescription to save money without risking your health.",
     "imageColor": "#c6e3f8"
   },
 
@@ -16,7 +16,7 @@
     "category": "Dental",
     "icon":"🦷",
     "summary": "How hidden acids in soft drinks erode your tooth enamel over time.",
-    "content": "Every time you sip a soda, your teeth are under attack for 20 minutes.Therefore,the No.1 thing to do is to rinse your mouth with water after drinking soda!",
+    "content": "Every time you sip a soda, your teeth are under attack for 20 minutes.The bacteria in your mouth turn that sugar into acid, which softens and dissolves your tooth enamel. This leads to painful cavities and sensitivity. If you do enjoy a soda, try to drink it quickly rather than sipping it all afternoon, and use a straw to keep the sugar away from your teeth. Most importantly, always rinse your mouth with plain water immediately after finishing to help neutralize the acid and protect your smile.",
     "imageColor": "#ffecb3"
   },
   {
@@ -25,7 +25,7 @@
     "category": "Wellness",
     "icon":"**",
     "summary": "Essential steps to take during the hottest months in Isiolo.",
-    "content": "If someone feels dizzy and has stopped sweating, move them to the shade immediately...",
+    "content": "In the high heat of Isiolo, heat stroke is a serious medical emergency that happens when the body can no longer cool itself down. If you see someone who is confused, has a very high body temperature, or has stopped sweating, move them to a cool, shaded area immediately. Remove extra clothing and apply cool water or wet cloths to their skin while fanning them. Have them sip water slowly if they are awake, and get them to the nearest health clinic immediately. Never ignore signs of extreme dizziness in the sun.",
     "imageColor": "#d1e7dd"
   },
 
@@ -35,6 +35,7 @@
     "category": "Pharmacy",
     "icon": "📅",
     "summary": "Is it safe to take medicine a day after it expires? Learn what those dates actually mean for your safety.",
+    "content":"An expiry date is the manufacturer's guarantee that the medicine is 100% safe and effective. After this date, the chemical structure of the drug can change. While some tablets might just become weaker and not work as well, liquid medicines—like eye drops or cough syrups—can actually grow harmful bacteria once they are past their date. For critical medications like those for heart conditions or insulin, using expired products is very dangerous. It is always safer to dispose of old medicine and get a fresh supply from your chemist.",
     "imageColor": "#d6eaf8"
   },
   {
@@ -43,6 +44,7 @@
     "category": "Dental",
     "icon": "🪥",
     "summary": "Brushing only cleans 60% of your teeth. Find out why flossing is the secret to avoiding painful cavities.",
+    "content":"Most people think brushing twice a day is enough, but a toothbrush only cleans the front and back of your teeth, leaving the sides untouched. Flossing is the only way to remove food and plaque from those tight spaces where cavities usually start. If you don't floss, you are leaving 40% of your tooth surfaces dirty, which can lead to gum disease and bad breath. Try to floss at least once every night before bed to keep your smile healthy and avoid expensive dental bills later.",
     "imageColor": "#fef9e7"
   },
   {
@@ -51,6 +53,7 @@
     "category": "Wellness",
     "icon": "🍋",
     "summary": "From ginger to enough sleep, explore simple habits that keep you from getting sick during flu season.",
+    "content":"Your immune system is like a shield that protects you from getting sick. To keep it strong, you don't always need expensive supplements; nature provides the best tools. Eating citrus fruits like lemons and oranges gives you Vitamin C, while adding ginger and garlic to your meals helps fight off germs. Getting 7 to 8 hours of sleep and drinking plenty of water—especially in the dry Isiolo heat—allows your body to repair itself. Consistency in these small habits is the secret to staying healthy during flu season.",
     "imageColor": "#d5f5e3"
   },
   {
@@ -59,6 +62,7 @@
     "category": "Pharmacy",
     "icon": "🩹",
     "summary": "Paracetamol or Ibuprofen? Understand the difference so you choose the right relief for your aches.",
+    "content":"Not all painkillers are the same, and choosing the right one depends on your symptoms. Paracetamol is usually the best choice for fevers and general headaches because it is gentle on the stomach. Ibuprofen is an anti-inflammatory, which means it works better for swelling, toothaches, or muscle pains. However, you should always take Ibuprofen with a little bit of food to protect your stomach lining. Never take more than the recommended dose, and if the pain lasts more than three days, visit your local clinic.",
     "imageColor": "#e8daef"
   }
 
